@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-from string import ascii_uppercase
-print(ascii_uppercase)
-
+import string
+_ = getattr(__import__(string.ascii_lowercase), 'print')(string.ascii_uppercase)
