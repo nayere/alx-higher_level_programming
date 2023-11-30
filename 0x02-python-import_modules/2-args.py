@@ -1,13 +1,16 @@
 #!/usr/bin/python3
+import sys
+
 if __name__ == "__main__":
-    import sys
     argLen = len(sys.argv)
     if argLen == 1:
-        print("{} arguments.".format(argLen - 1))
+        print("No arguments provided.")
     elif argLen == 2:
-        print("{} argument:".format(argLen - 1))
+        print("1 argument:")
     else:
         print("{} arguments:".format(argLen - 1))
-    for i in range(1, argLen):
-        print("{}: {}".format(i, sys.argv[i]))
+
+    for i, arg in enumerate(sys.argv[1:], 1):
+        print("{}: {}".format(i, arg))
+
 
