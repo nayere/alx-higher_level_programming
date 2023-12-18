@@ -1,13 +1,17 @@
 #!/usr/bin/python3
+
+
 def magic_calculation(a, b):
-  
-    from magic_calculation_102 import add, sub
+    result = 0
 
-    if a < b:
-        c = add(a, b)
-        for i in range(4, 6):
-            c = add(c, i)
-        return (c)
+    for i in range(1, 3):
+        try:
+            if i > a:
+                raise Exception('Too far')
 
-    else:
-        return(sub(a, b))
+            result += a ** b / i
+        except:
+            result = b + a
+            break
+
+    return result
