@@ -6,9 +6,9 @@ class Square:
     """ Representation of a square."""
 
     def __init__(self, size=0):
-        """ The Initialization of a new Square.
+        """The Initialization of a new Square.
         Args:
-            size (int): The size of the new square.
+        size (int): The size of the new square.
         """
         if not isinstance(size, int):
             raise TypeError("the size required  must be an integer")
