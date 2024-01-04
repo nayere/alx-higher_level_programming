@@ -59,11 +59,7 @@ class Rectangle:
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
-<<<<<<< HEAD
-            raise ValueError("the height must be >= 2")
-=======
             raise ValueError("height must be >= 0")
->>>>>>> b7d346cecb98c80549be0d48c7c9c62eb3e829ad
         self.__height = value
 
     def area(self):
