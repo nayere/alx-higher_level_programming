@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""Module 4-rectangle
+"""
 Defines a Rectangle class.
 """
 
 
 class Rectangle:
-    """Rectangle class defined by width and height."""
+    """The rectangle class defined by width and height."""
 
     def __init__(self, width=0, height=0):
         """Initializes a Rectangle instance.
@@ -30,20 +30,20 @@ class Rectangle:
 
     def __repr__(self):
         """Return a string representation of a Rectangle instance
-        that is able to recreate a new instance by using eval()
+        that can recreate a new instance by using eval()
         """
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     @property
     def width(self):
-        """Retrieves the width of a Rectangle instance."""
+        """Get the width of a Rectangle instance."""
         return self.__width
 
     @width.setter
     def width(self, value):
-        """Sets the width of a Rectangle instance
+        """Get/sets the width of a Rectangle instance
         Args:
-            value: value of the width, must be a positive integer
+            value: the value of the width, must be a positive integer
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -53,14 +53,14 @@ class Rectangle:
 
     @property
     def height(self):
-        """Retrieves the height of a Rectangle instance."""
+        """Get the height of a Rectangle instance."""
         return self.__height
 
     @height.setter
     def height(self, value):
         """Sets the height of a Rectangle instance
         Args:
-            value: value of the height, must be a positive integer
+            value: the value of the height, must be a positive integer
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
@@ -69,16 +69,16 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """Calculates the area of a Rectangle instance
+        """Computes the area of a Rectangle instance
         Returns:
-            Area of the the rectangle, given by height * width
+            Area of the rectangle, given by height * width
         """
         return self.__width * self.__height
 
     def perimeter(self):
-        """Calculates the perimeter of a Rectangle instance
+        """Computes the perimeter of a Rectangle instance
         Returns:
-            Perimeter of the rectangle, given by 2 * (height + width)
+            The perimeter of the rectangle, given by 2 * (height + width)
         """
         if self.__height == 0 or self.__width == 0:
             return 0
