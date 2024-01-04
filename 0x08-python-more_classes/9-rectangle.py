@@ -1,16 +1,14 @@
 #!/usr/bin/python3
 """
 A Rectangle Class with public class attributes, private instance attributes
-(width, height), public methods, special methods,
+Public methods, special methods,
 static methods and class methods
 """
 
 
 class Rectangle():
     """
-    A Rectangle Class with public class attributes,
-    private instance attributes width, height, public methods,
-    special methods, static methods and class methods.
+    A Rectangle Class
     """
 
     number_of_instances = 0
@@ -28,11 +26,11 @@ class Rectangle():
         Rectangle.number_of_instances += 1
 
     def area(self):
-        """Calculate the area of a Rectangle"""
+        """Compute the area of a Rectangle"""
         return self.__width * self.__height
 
     def perimeter(self):
-        """Get the perimeter of a Rectangle"""
+        """Get/set the perimeter of a Rectangle"""
         if (self.__width == 0 or self.__height == 0):
             return 0
 
@@ -40,7 +38,7 @@ class Rectangle():
 
     def __str__(self):
         """
-        Function to print a Square with the print_symbol
+        Function to print a Square
         """
 
         if self.__width == 0 or self.__height == 0:
@@ -52,23 +50,23 @@ class Rectangle():
         return '\n'.join(final)
 
     def __repr__(self):
-        """Returns an “official” string representation of a Rectangle"""
+        """Returns string of Rectangle"""
         return f'Rectangle({self.__width}, {self.__height})'
 
     def __del__(self):
-        """Prints a message when a Rectangle instance is deleted"""
+        """Promt message when a Rectangle instance is deleted"""
         print('Bye rectangle...')
         Rectangle.number_of_instances -= 1
 
     @property
     def width(self):
-        """Getter of the property width"""
+        """Get of the property width"""
         return self.__width
 
     @width.setter
     def width(self, value):
         """
-        Getter of the property value
+        Get of the property value
           Args:
             - value: int
         """
@@ -82,13 +80,13 @@ class Rectangle():
 
     @property
     def height(self):
-        """Getter of the property height"""
+        """Get of the property height"""
         return self.__height
 
     @height.setter
     def height(self, value):
         """
-        Getter of the property value
+        Get of the property value
           Args:
             - value: int
         """
