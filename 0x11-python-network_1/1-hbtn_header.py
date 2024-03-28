@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """
 Displays the value of the X-Request-Id variable
