@@ -1,9 +1,9 @@
-
 #!/usr/bin/python3
 """
-By Nayere 
 Sends a request to the URL and displays the value of the variable X-Request-Id
-in the response header"""
+in the response header
+By Nayere 
+"""
 
 if __name__ == '__main__':
     from requests import get
