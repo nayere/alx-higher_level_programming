@@ -1,4 +1,3 @@
-
 Curriculum
 SE Foundations
 Average: 84.2%
